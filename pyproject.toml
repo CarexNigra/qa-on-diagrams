@@ -1,0 +1,81 @@
+[tool.poetry]
+name = "veed-conversion-predictor"
+version = "0.0.1"
+description = "Service to predict the probability of a veed user to be a converted paing customer"
+authors = ["Lara Simonova <larissasimonova@gmail.com>"]
+readme = "README.md"
+package-mode = false # to supress certain poetry warning
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+openai = "^1.64.0"
+pillow = "^11.1.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+mypy = "^1.14.1"
+pre-commit = "^4.1.0"
+pytest = "^8.3.4"
+ruff = "^0.9.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options] 
+testpaths = ["tests"] # NOTE: only scan test files in this folder
+norecursedirs = ["__pycache__"]
+
+[tool.mypy]
+ignore_missing_imports = true
+exclude = ["^.venv/*", "research"]
+
+[tool.ruff]
+exclude = [
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "venv",
+    "events",
+    "proto",
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytype",
+    ".svn",
+    ".tox",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "research"
+]
+line-length = 120
+indent-width = 4
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+fixable = ["ALL"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
