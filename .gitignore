@@ -2,3 +2,4 @@ FlowLearn
 .venv
 .env
 !.env.base
+*.pkl
