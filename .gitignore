@@ -1,2 +1,4 @@
 FlowLearn
 .venv
+.env
+!.env.base
