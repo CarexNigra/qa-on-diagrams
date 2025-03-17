@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "veed-conversion-predictor"
+name = "vllm-qa-on-diagrams-comparison"
 version = "0.0.1"
-description = "Service to predict the probability of a veed user to be a converted paing customer"
-authors = ["Lara Simonova <larissasimonova@gmail.com>"]
+description = "Research project scratch to comparing frontier multimodal LLMs on QA tasks for diagrams"
+authors = ["Lara Simonova"]
 readme = "README.md"
 package-mode = false # to supress certain poetry warning
 
