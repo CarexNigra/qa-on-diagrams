@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "vllm-qa-on-diagrams-comparison"
+name = "qa-on-diagrams"
 version = "0.0.1"
 description = "Research project scratch to comparing frontier multimodal LLMs on QA tasks for diagrams"
 authors = ["Lara Simonova"]
