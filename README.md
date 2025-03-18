@@ -159,7 +159,7 @@ that:
 * All improvements are statistically significant, which confirms that these results are not
 due to random variation but a real, meaningful enhancement in model performance.
 * Future research could explore:
-    * Scaling the dataset for broader validation or manual creation of Miro-specific dataset
+    * Scaling the dataset for broader validation or manual creation of more specific dataset
     * Extending to additional multimodal models.
     * Qualitative analysis to assess types of questions that benefit most from vision input.
 

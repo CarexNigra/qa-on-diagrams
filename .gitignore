@@ -3,3 +3,4 @@ FlowLearn
 .env
 !.env.base
 *.pkl
+.DS_Store
